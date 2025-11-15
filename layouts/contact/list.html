@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="contact-page">
+    <div class="container">
+        <h1>Contact Dean's IT Services</h1>
+        <p>Ready to discuss your small business IT needs? Reach out to us directly via email or phone.</p>
+        
+        <div class="contact-details">
+            <p class="detail-item">
+                <strong>Email:</strong> 
+                <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a>
+            </p>
+            <p class="detail-item">
+                <strong>Phone:</strong> 
+                <a href="tel:{{ replace .Params.phone "-" "" }}">{{ .Params.phone }}</a>
+            </p>
+        </div>
+        
+        <p class="service-note">We aim to respond to all inquiries within one business day.</p>
+    </div>
+</section>
+{{ end }}

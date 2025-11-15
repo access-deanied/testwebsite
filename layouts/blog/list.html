@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="blog-list">
+    <div class="container">
+        <h1>IT Insights & Blog</h1>
+        <p>Your resource for cybersecurity, cloud management, and small business IT strategy.</p>
+        
+        {{ range .Paginator.Pages }}
+        <article class="post-summary">
+            <h2>{{ .Title }}</h2>
+            
+            <div class="full-article-content">
+                {{ .Content }}
+            </div>
+            
+            </article>
+        {{ end }}
+
+    </div>
+</section>
+{{ end }}

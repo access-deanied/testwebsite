@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+<header class="hero">
+    <div class="container">
+        <h1>IT Services & Solutions for Small Businesses</h1>
+        <p>Reliable support, security, and infrastructure management—so you can focus on growth.</p>
+        <a href="#services" class="cta-button">View Our Services</a>
+    </div>
+</header>
+
+<section id="status-widget" class="status-widget">
+    <div class="container">
+        <span class="statuspage-widget" data-theme="dark"></span>
+    </div>
+</section>
+<section id="services" class="services-overview">
+    <div class="container">
+        <h2>Our Core Offerings</h2>
+        <div class="service-cards">
+            <article class="card">
+                <h3>Managed IT Support</h3>
+                <p>24/7 monitoring and helpdesk for immediate issue resolution.</p>
+            </article>
+
+            <article class="card">
+                <h3>Cybersecurity</h3>
+                <p>Advanced threat detection, backup, and recovery planning.</p>
+            </article>
+
+            <article class="card">
+                <h3>Cloud & Infrastructure</h3>
+                <p>Migration, maintenance, and optimization of cloud resources.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="location-map" class="map-container">
+    <div class="container">
+        <h2>Our Location Base</h2>
+        <p>Proudly serving the Raymore and surrounding Kansas City metro area.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.9181146604616!2d-94.46083502422791!3d38.79059527173956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0d29792039757%3A0x7d28c8d08502d60e!2s606%20Mayfair%20Ct%2C%20Raymore%2C%20MO%2064083!5e0!3m2!1sen!2sus!4v1700259838029!5m2!1sen!2sus"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<footer class="contact-cta">
+    <div class="container">
+        <h3>Ready to Scale Your Business?</h3>
+        <a href="/contact" class="cta-button secondary">Get a Free Consultation</a>
+    </div>
+</footer>
+{{ end }}
