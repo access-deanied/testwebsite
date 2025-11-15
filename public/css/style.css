@@ -40,11 +40,10 @@ h1, h2, h3, .main-nav, .header-branding h1, .cta-button, .detail-item strong {
     border-bottom: 2px solid var(--primary-color);
 }
 
-.header-branding h1 {
-    color: var(--text-color); /* CHANGED from 'white' to use the new yellowish off-white variable */
-    font-size: 1.5em;
-    margin: 0;
-    text-align: center;
+/* Limit the logo size within the header */
+.header-branding img {
+    max-height: 200px; /* Adjust this value (e.g., 80px, 100px) if 120px is still too big */
+    width: auto;
 }
 
 .main-nav ul {
