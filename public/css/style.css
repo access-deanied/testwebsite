@@ -238,3 +238,16 @@ h1, h2, h3, .main-nav, .header-branding h1, .cta-button, .detail-item strong {
 .detail-item a:hover {
     text-decoration: underline;
 }
+
+/* --- Floating Status Widget Styling --- */
+/* Target the widget wrapper specifically for precise positioning */
+#floating-status-widget {
+    position: fixed;
+    top: 20px;          /* 20px from the top edge */
+    right: 20px;        /* 20px from the right edge */
+    left: unset;        /* Ensure left property is cleared */
+    bottom: unset;      /* Ensure bottom property is cleared */
+    z-index: 1000;      /* Ensure it sits above all other content */
+    opacity: 0.9;
+    cursor: pointer;
+}
