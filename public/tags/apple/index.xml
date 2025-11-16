@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/apple/</link>
+    <description>Recent content in Apple on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Nov 2025 12:37:00 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apple Nears Deal to Pay Google $1B Annually to Power New Siri, Report Says</title>
+      <link>http://localhost:1313/blog/apple-google-deal/</link>
+      <pubDate>Wed, 05 Nov 2025 12:37:00 -0800</pubDate>
+      <guid>http://localhost:1313/blog/apple-google-deal/</guid>
+      <description>&lt;h2 id=&#34;key-takeaways-from-bloombergs-report&#34;&gt;Key Takeaways from Bloomberg&amp;rsquo;s Report&lt;/h2&gt;&#xA;&lt;p&gt;Apple is reportedly nearing a significant deal with Google to power its planned overhaul of the voice assistant, &lt;strong&gt;Siri&lt;/strong&gt; [1].&lt;/p&gt;&#xA;&lt;p&gt;According to a new report from Bloomberg, Apple would pay Google approximately &lt;strong&gt;$1 billion a year&lt;/strong&gt; for a custom version of Google’s &lt;strong&gt;Gemini AI model&lt;/strong&gt; [2].&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;A Temporary Solution:&lt;/strong&gt; Apple is planning to use Google’s model as an interim measure until its own in-house AI technology is sufficiently powerful to manage the slate of upcoming features for the voice assistant [1].&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Scale of the Model:&lt;/strong&gt; The custom Google AI model is expected to feature &lt;strong&gt;1.2 trillion parameters&lt;/strong&gt;, which is a measure of the software&amp;rsquo;s complexity. For context, this is roughly eight times more complex than the 150 billion parameters used in the current cloud-based version of &lt;strong&gt;Apple Intelligence&lt;/strong&gt; [2].&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Competitive Vetting:&lt;/strong&gt; Apple had previously tested models from rivals like &lt;strong&gt;OpenAI&lt;/strong&gt; and &lt;strong&gt;Anthropic&lt;/strong&gt; before ultimately choosing to move forward with Google [3].&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Expected Launch:&lt;/strong&gt; The overhauled version of Siri is anticipated to launch next spring, though plans could still change since the launch is still months away [1].&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Read the full report on TechCrunch here: &lt;a href=&#34;https://techcrunch.com/2025/11/05/apple-nears-deal-to-pay-google-1b-annually-to-power-new-siri-report-says/&#34;&gt;Apple nears deal to pay Google $1B annually to power new Siri, report says&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

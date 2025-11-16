@@ -36,5 +36,33 @@
       <guid>http://localhost:1313/tags/threat-intelligence/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Apple</title>
+      <link>http://localhost:1313/tags/apple/</link>
+      <pubDate>Wed, 05 Nov 2025 12:37:00 -0800</pubDate>
+      <guid>http://localhost:1313/tags/apple/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gemini</title>
+      <link>http://localhost:1313/tags/gemini/</link>
+      <pubDate>Wed, 05 Nov 2025 12:37:00 -0800</pubDate>
+      <guid>http://localhost:1313/tags/gemini/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google</title>
+      <link>http://localhost:1313/tags/google/</link>
+      <pubDate>Wed, 05 Nov 2025 12:37:00 -0800</pubDate>
+      <guid>http://localhost:1313/tags/google/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Siri</title>
+      <link>http://localhost:1313/tags/siri/</link>
+      <pubDate>Wed, 05 Nov 2025 12:37:00 -0800</pubDate>
+      <guid>http://localhost:1313/tags/siri/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
