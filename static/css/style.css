@@ -42,7 +42,7 @@ h1, h2, h3, .main-nav, .header-branding h1, .cta-button, .detail-item strong {
 
 /* Limit the logo size within the header */
 .header-branding img {
-    max-height: 200px; /* Adjust this value (e.g., 80px, 100px) if 120px is still too big */
+    max-height: 400px; /* Adjust this value (e.g., 80px, 100px) if 120px is still too big */
     width: auto;
 }
 
