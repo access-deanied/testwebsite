@@ -1,0 +1,28 @@
+{{ define "main" }}
+<article class="project-detail-page">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p class="project-date">Completed: {{ .Date.Format "January 2006" }}</p>
+
+        <div class="metadata-bar">
+            {{ if .Params.project_status }}
+            <span class="status-tag">Status: {{ .Params.project_status }}</span>
+            {{ end }}
+
+            {{ range .Params.tags }}
+            <span class="tech-tag">{{ . }}</span>
+            {{ end }}
+        </div>
+
+        <hr>
+
+        <div class="project-content">
+            {{ .Content }}
+        </div>
+
+        <div class="project-footer">
+            <a href="/projects/" class="cta-button secondary">← Back to All Projects</a>
+        </div>
+    </div>
+</article>
+{{ end }}

@@ -101,14 +101,6 @@ h1, h2, h3, .main-nav, .header-branding h1, .cta-button, .detail-item strong {
     background-color: #008c9f; 
 }
 
-/* --- Status Widget Section Styling --- */
-.status-widget {
-    padding: 20px 0;
-    text-align: center; 
-    background-color: var(--secondary-color);
-    border-bottom: 2px solid var(--primary-color);
-}
-
 /* --- Services Section --- */
 .services-overview {
     padding: 40px 0;
@@ -249,4 +241,22 @@ h1, h2, h3, .main-nav, .header-branding h1, .cta-button, .detail-item strong {
     z-index: 1000;      /* Ensure it sits above all other content */
     opacity: 0.9;
     cursor: pointer;
+}
+
+/* Target images inside the project content */
+.full-article-content img {
+    /* Set a max height for all images within the project content */
+    max-height: 100px; 
+    /* Prevent images from getting too wide if they are massive */
+    max-width: 100%;
+    /* Ensure small logos stay small */
+    height: auto;
+}
+
+/* Specific class to shrink the logos even more */
+.project-logos-small {
+    height: 50px;
+    width: auto;
+    margin-right: 15px; /* Add spacing between them */
+    display: inline-block; /* Helps align them next to each other */
 }

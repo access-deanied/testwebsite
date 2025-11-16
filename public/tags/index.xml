@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My New Hugo Site</title>
+    <title>Tags on Dean Mansur Portfolio</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <description>Recent content in Tags on Dean Mansur Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Nov 2025 10:00:00 -0600</lastBuildDate>
@@ -62,6 +62,48 @@
       <link>http://localhost:1313/tags/siri/</link>
       <pubDate>Wed, 05 Nov 2025 12:37:00 -0800</pubDate>
       <guid>http://localhost:1313/tags/siri/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Barracuda</title>
+      <link>http://localhost:1313/tags/barracuda/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/barracuda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Change Management</title>
+      <link>http://localhost:1313/tags/change-management/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/change-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Migration</title>
+      <link>http://localhost:1313/tags/cloud-migration/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud-migration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>M365</title>
+      <link>http://localhost:1313/tags/m365/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/m365/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project Management</title>
+      <link>http://localhost:1313/tags/project-management/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/project-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proofpoint</title>
+      <link>http://localhost:1313/tags/proofpoint/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/proofpoint/</guid>
       <description></description>
     </item>
   </channel>

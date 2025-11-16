@@ -1,3 +1,26 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://localhost:1313/' # Using localhost for local development
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Dean Mansur Portfolio'
+
+# Configure the main navigation menu
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Helpful Articles"
+    url = "/articles/" 
+    weight = 20
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/" # This is the crucial link to your new folder
+    weight = 30
+  [[menu.main]]
+    name = "Contact Me"
+    url = "/contact/"
+    weight = 40
+
+# Setting to ensure all content is listed on section pages (fix for pages not showing up)
+[params]
+  paginate = 100 # Adjust this number based on how many total projects/articles you expect
