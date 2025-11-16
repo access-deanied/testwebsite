@@ -246,7 +246,7 @@ h1, h2, h3, .main-nav, .header-branding h1, .cta-button, .detail-item strong {
 /* Target images inside the project content */
 .full-article-content img {
     /* Set a max height for all images within the project content */
-    max-height: 100px; 
+    max-height: 80px; 
     /* Prevent images from getting too wide if they are massive */
     max-width: 100%;
     /* Ensure small logos stay small */
@@ -257,6 +257,6 @@ h1, h2, h3, .main-nav, .header-branding h1, .cta-button, .detail-item strong {
 .project-logos-small {
     height: 50px;
     width: auto;
-    margin-right: 15px; /* Add spacing between them */
+    margin-right: 40px; /* Add spacing between them */
     display: inline-block; /* Helps align them next to each other */
 }
