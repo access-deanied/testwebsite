@@ -1,9 +1,16 @@
 @media (max-width: 768px) {
-    /* 1. Resize the Main Logo */
-    /* Assuming your logo is in a container or is the 'img' tag itself */
-    .header-logo img { 
-        max-width: 80%; /* Shrink the logo on small screens */
+    /* 1. Resize and Center the Main Logo */
+    .header-logo {
+        text-align: center; /* Center the image container content */
+        width: 100%;
+        padding: 10px 0; /* Add some padding above/below for spacing */
+    }
+
+    .header-logo img {
+        max-width: 150px; /* Set a fixed, small size for the logo */
         height: auto;
+        display: block; /* Required for margin: auto to work */
+        margin: 0 auto; /* Center the image element itself */
     }
 
     /* 2. Adjust Main Heading Font Size */
