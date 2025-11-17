@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    /* 1. Resize the Main Logo */
+    /* Assuming your logo is in a container or is the 'img' tag itself */
+    .header-logo img { 
+        max-width: 80%; /* Shrink the logo on small screens */
+        height: auto;
+    }
+
+    /* 2. Adjust Main Heading Font Size */
+    /* Makes the title less giant on a phone */
+    h1 {
+        font-size: 1.8em; 
+    }
+
+    /* 3. Force Columns to Stack */
+    /* If your "Core Technical Domains" are side-by-side, force them to stack */
+    .technical-domains-container {
+        display: block !important; /* Overrides flex or grid for stacking */
+    }
+    .domain-section {
+        margin-bottom: 20px; /* Adds space between stacked items */
+        width: 100%;
+    }
+}

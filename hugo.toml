@@ -24,3 +24,5 @@ title = 'Dean Mansur Portfolio'
 # Setting to ensure all content is listed on section pages (fix for pages not showing up)
 [params]
   paginate = 100 # Adjust this number based on how many total projects/articles you expect
+  # ADDED: Link your custom CSS file for mobile optimizations
+  extraCSS = ["mobile.css"]
