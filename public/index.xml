@@ -6,8 +6,15 @@
     <description>Recent content on Dean Mansur Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Nov 2025 10:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 16 Nov 2025 20:00:00 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File Upload</title>
+      <link>http://localhost:1313/upload/</link>
+      <pubDate>Sun, 16 Nov 2025 20:00:00 -0600</pubDate>
+      <guid>http://localhost:1313/upload/</guid>
+      <description>&lt;h1 id=&#34;secure-file-upload&#34;&gt;Secure File Upload&lt;/h1&gt;&#xA;&lt;p&gt;Thank you for sending your files! Please use the button below to upload your documents directly to our secure Dropbox folder.&lt;/p&gt;&#xA;&lt;div style=&#34;text-align: center; margin: 50px 0;&#34;&gt;&#xD;&#xA;    &lt;a href=&#34;https://www.dropbox.com/request/jRKr5RPtPcwVpiAVFIQd&#34; target=&#34;_blank&#34; style=&#34;background-color: #0070e0; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-size: 1.2em; font-weight: bold;&#34;&gt;&#xD;&#xA;        Click Here to Upload Files&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p style=&#34;text-align: center; font-size: 0.9em; margin-top: 30px;&#34;&gt;&#xD;&#xA;    The link will open a new tab to a secure Dropbox File Request page. You do not need a Dropbox account to submit files.&#xD;&#xA;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Next Frontier: Disrupting AI-Orchestrated Cyber Espionage</title>
       <link>http://localhost:1313/blog/disrupting-ai-espionage/</link>

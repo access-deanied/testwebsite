@@ -26,3 +26,7 @@ title = 'Dean Mansur Portfolio'
   paginate = 100 # Adjust this number based on how many total projects/articles you expect
   # ADDED: Link your custom CSS file for mobile optimizations
   extraCSS = ["mobile.css"]
+  [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
