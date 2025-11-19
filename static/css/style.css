@@ -6,14 +6,16 @@
     --text-color: #fff4e0; /* Yellowish Off-White for body text */
     --background-color: #1e1e1e; /* Very dark gray main background */
     --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    --border-radius: 8px;
+    --border-radius: 8px; /* Standardized border radius */
 }
 
-/* --- Global Standards --- */
+/* --- Global Reset & Standards --- */
+/* CRITICAL: Makes layout predictable by including padding in width calculations */
 *, *::before, *::after {
-    box-sizing: border-box; /* Critical for layout math */
+    box-sizing: border-box;
 }
 
+/* --- Font Definitions --- */
 body {
     font-family: 'Lora', serif; 
     line-height: 1.6;
@@ -21,25 +23,58 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
+    -webkit-font-smoothing: antialiased; /* Makes text look sharper on Mac/iOS */
 }
 
-h1, h2, h3, .cta-button, .detail-item strong {
+h1, h2, h3, .main-nav, .header-branding h1, .cta-button, .detail-item strong {
     font-family: 'Inter', sans-serif;
 }
 
+/* Global Container - Added side padding for mobile devices */
 .container {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 20px; /* Added side padding for mobile safety */
+    padding: 20px 20px; /* 20px left/right padding ensures text never hits the screen edge */
 }
 
 /* --- Header and Navigation --- */
-.header-branding { /* Assuming you have this in your layout.html */
+.header-branding {
+    width: 100%; 
     background-color: var(--secondary-color);
     padding: 15px 20px; 
     border-bottom: 2px solid var(--primary-color);
-    text-align: center;
+    text-align: center; /* Centers logo and nav initially */
+}
+
+/* Responsive Logo */
+.header-branding img {
+    max-height: 100px; /* Reduced from 400px (too big for headers) */
+    width: auto;
+    max-width: 100%; /* Ensures it doesn't overflow mobile screens */
+    object-fit: contain;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows links to drop to next line on small screens */
+    gap: 20px; /* Adds space between links naturally */
+}
+
+.main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px; /* Added side padding makes touch targets easier on mobile */
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color); 
 }
 
 /* --- Hero Section --- */
@@ -51,8 +86,9 @@ h1, h2, h3, .cta-button, .detail-item strong {
 }
 
 .hero h1 {
-    font-size: clamp(2em, 5vw, 3em); /* Responsive font size */
+    font-size: clamp(2em, 5vw, 3em); /* Responsive font size: scales between 2em and 3em */
     margin-bottom: 15px;
+    line-height: 1.2;
 }
 
 .cta-button {
@@ -69,22 +105,22 @@ h1, h2, h3, .cta-button, .detail-item strong {
 
 .cta-button:hover {
     background-color: #008c9f;
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Subtle lift effect */
 }
 
-/* --- Services Section (Desktop Defaults) --- */
+/* --- Services Section --- */
 .services-overview {
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
     background-color: var(--background-color);
 }
 
-/* Desktop Grid Layout */
 .service-cards {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: center; /* Centers cards if they wrap */
+    gap: 25px; /* Uses gap instead of margin for cleaner spacing */
     margin-top: 40px;
+    flex-wrap: wrap; /* CRITICAL: Allows cards to stack on mobile */
 }
 
 .card {
@@ -92,34 +128,41 @@ h1, h2, h3, .cta-button, .detail-item strong {
     padding: 25px;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
-    flex: 1; /* Cards share equal width */
+    flex: 1 1 300px; /* Basis of 300px: If screen is smaller, they stack. If larger, they share width. */
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .card h3 {
     color: var(--primary-color); 
     margin-top: 0;
+    margin-bottom: 15px;
 }
 
-/* Hide the "Clone" cards on desktop */
-.mobile-clone {
-    display: none;
-}
-
-/* --- Map Section --- */
+/* --- Map Section Styling --- */
 .map-container {
     padding: 50px 20px;
     text-align: center;
     background-color: var(--background-color);
 }
 
-.map-container iframe {
-    max-width: 100%;
-    width: 550px;
-    border-radius: var(--border-radius);
+.map-container p {
+    margin-bottom: 25px;
+    color: var(--text-color);
 }
 
-/* --- Footer --- */
+.map-container iframe {
+    max-width: 100%; /* Ensures map doesn't overflow mobile */
+    width: 550px; 
+    height: 350px; /* Fixed height for consistency */
+    border: 0;
+    border-radius: var(--border-radius);
+    display: block;
+    margin: 0 auto;
+}
+
+/* --- Contact CTA Footer --- */
 .contact-cta {
     background-color: var(--primary-color); 
     color: var(--secondary-color); 
@@ -139,54 +182,124 @@ h1, h2, h3, .cta-button, .detail-item strong {
     color: var(--primary-color);
 }
 
-/* --- MOBILE ANIMATION & RESPONSIVENESS --- */
+/* --- Blog / Post Summary --- */
+.post-summary {
+    background: var(--secondary-color); 
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.post-summary h2 {
+    margin-top: 0;
+    color: var(--primary-color); 
+}
+
+.post-summary h2 a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.post-summary h2 a:hover {
+    color: var(--text-color);
+}
+
+/* --- Contact Page Styling --- */
+.contact-page {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-page h1 {
+    color: var(--primary-color);
+    font-size: 2.2em;
+}
+
+.contact-details {
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--secondary-color); 
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.detail-item {
+    font-size: 1.1em;
+    margin: 20px 0;
+    word-break: break-word; /* Prevents long emails/URLs from breaking mobile layout */
+}
+
+.detail-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* --- Image Handling for Content --- */
+.full-article-content img {
+    max-height: 150px; /* Increased slightly for visibility */
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-logos-small {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* --- Floating Status Widget --- */
+#floating-status-widget {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; 
+    opacity: 0.9;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+#floating-status-widget:hover {
+    opacity: 1;
+}
+
+/* --- MOBILE SPECIFIC ADJUSTMENTS (The Magic) --- */
 @media (max-width: 768px) {
     
-    /* 1. Prepare the Window */
-    .slider-window {
-        width: 100%;
-        overflow: hidden; /* Hide cards off screen */
-        position: relative;
+    /* Stack navigation vertically */
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    /* 2. Configure the Track for Animation */
-    .service-cards {
-        display: flex;
-        gap: 0; /* Remove gap, handle spacing via padding inside card */
-        /* 6 cards (3 originals + 3 clones). Each 100% width. Total 600% */
-        width: 600%; 
-        animation: infiniteScroll 18s linear infinite; /* 18s loop */
-    }
-
-    /* 3. Show the Clones on Mobile */
-    .mobile-clone {
-        display: block; /* Reveal the clones */
-    }
-
-    /* 4. Size the Cards */
-    .card {
-        width: 16.666%; /* 100% divided by 6 cards = 16.66% */
-        flex-shrink: 0;
-        margin: 0;
-        /* Add spacing visually via border so math stays perfect */
-        border-left: 10px solid var(--background-color);
-        border-right: 10px solid var(--background-color);
-    }
-
-    /* 5. The Infinite Loop Animation */
-    @keyframes infiniteScroll {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            /* Move left by 50% of the track (which is exactly 3 cards) */
-            /* Since the clones are identical to the first 3, it snaps back instantly */
-            transform: translateX(-50%);
-        }
+    /* Reduce font sizes for mobile */
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    
+    /* Ensure container width allows for breathing room */
+    .container {
+        width: 95%;
     }
     
-    /* Pause on touch/hover so people can read */
-    .service-cards:hover, .service-cards:active {
-        animation-play-state: paused;
+    /* Stack cards completely if they haven't already */
+    .service-cards {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%; /* Full width on mobile */
+    }
+    
+    /* Adjust floating widget to not block header content on small screens */
+    #floating-status-widget {
+        top: auto;
+        bottom: 20px; /* Moves to bottom right on mobile */
+        transform: scale(0.8); /* Makes it slightly smaller */
     }
 }
