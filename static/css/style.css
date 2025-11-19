@@ -303,3 +303,21 @@ h1, h2, h3, .main-nav, .header-branding h1, .cta-button, .detail-item strong {
         transform: scale(0.8); /* Makes it slightly smaller */
     }
 }
+
+/* --- Project & Content Images (RESTORED) --- */
+/* Target images inside the project content area */
+.full-article-content img {
+    max-height: 80px;  /* Keeps general content images small */
+    max-width: 100%;   /* Prevents overflow */
+    height: auto;      /* Maintains aspect ratio */
+    margin: 10px 0;
+}
+
+/* Specific class to shrink logos even more */
+.project-logos-small {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
